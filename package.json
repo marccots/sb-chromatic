@@ -10,7 +10,7 @@
     "type-check": "vue-tsc --noEmit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=08b5eb993c6e"
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
     "vue": "^3.2.45"
