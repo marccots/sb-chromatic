@@ -9,7 +9,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=08b5eb993c6e"
   },
   "dependencies": {
     "vue": "^3.2.45"
@@ -34,5 +35,7 @@
     "vite": "^4.0.0",
     "vue-loader": "^16.8.3",
     "vue-tsc": "^1.0.12"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "sb-chromatic@0.0.0"
 }
