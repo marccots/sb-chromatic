@@ -8,6 +8,23 @@ on: pull_request
 
 # List of jobs
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ '14', '16', '18' ]
+    name: Node ${{ matrix.node }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install dependencies
+        run: npm install
+      - name: Testing
+        run: npm test
   chromatic:
     name: Publish to Chromatic
     # Operating System
